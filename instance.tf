@@ -2,7 +2,8 @@
 
 resource "aws_instance" "alex-instance" {
 	count = 2
-	ami = "ami-065deacbcaac64cf2"
+	# ami = "ami-065deacbcaac64cf2"
+	ami = data.aws_ami.ubuntu_latest.id
 	instance_type = "t2.micro"
 	subnet_id = aws_subnet.main-public-1.id
 	vpc_security_group_ids = [aws_security_group.allow-ssh.id]
