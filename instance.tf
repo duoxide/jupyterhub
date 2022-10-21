@@ -1,7 +1,7 @@
 # Instance creation
 
 resource "aws_instance" "alex-instance" {
-	count = 2
+	# count = 2
 	# ami = "ami-065deacbcaac64cf2"
 	ami = data.aws_ami.ubuntu_latest.id
 	instance_type = "t2.micro"

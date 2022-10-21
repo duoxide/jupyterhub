@@ -27,8 +27,8 @@ module "elb" {
   # name_prefix string
   security_groups = [aws_security_group.allow-ssh.id]
   subnets = [aws_subnet.main-public-1.id]
-  instances = [aws_instance.alex-instance[0].id, aws_instance.alex-instance[1].id]
-  # instances = ["${aws_instance.alex-instance}[${count.index}]"]
+  # instances = [aws_instance.alex-instance[0].id, aws_instance.alex-instance[1].id]
+  instances = [aws_instance.alex-instance.id]
   depends_on = [aws_instance.alex-instance]
-  number_of_instances = 2
+  number_of_instances = 1
 }
