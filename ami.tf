@@ -12,5 +12,5 @@ data "aws_ami" "ubuntu_latest" {
     values = ["hvm"]
   }
 
-        owners = ["amazon"]
+  owners = ["amazon"]
 }
