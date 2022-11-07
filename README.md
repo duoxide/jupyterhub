@@ -9,7 +9,7 @@ This project is used for automated deployment of VPC, EC2, ALB in AWS using Terr
 * Terraform v1.3.3
 * AWS account
 
-## HOW-To
+## HOW-To deploy and use
 
 1. `git clone`
 2. `ssh-keygen`
