@@ -1,1 +1,5 @@
 .terraform/
+.terraform.tfstate
+.terraform.tstate.backup
+autoscaling.tf.tempoff
+elb.tf.tempoff
